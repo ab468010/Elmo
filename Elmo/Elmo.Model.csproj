@@ -7,8 +7,8 @@
     <ProjectGuid>{513438E1-2555-4666-9B89-8300C02296B0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Elmo</RootNamespace>
-    <AssemblyName>Elmo</AssemblyName>
+    <RootNamespace>Elmo.Model</RootNamespace>
+    <AssemblyName>Elmo.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Account.cs" />
-    <Compile Include="Model\Book.cs" />
-    <Compile Include="Model\BookStock.cs" />
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Order.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookStock.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
