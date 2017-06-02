@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmo", "Elmo\Elmo.csproj", "{513438E1-2555-4666-9B89-8300C02296B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop", "BookShop\BookShop.csproj", "{19B4AFF1-6E04-45DA-B81D-D8AE718BF3F3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{513438E1-2555-4666-9B89-8300C02296B0} = {513438E1-2555-4666-9B89-8300C02296B0}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{513438E1-2555-4666-9B89-8300C02296B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{513438E1-2555-4666-9B89-8300C02296B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{513438E1-2555-4666-9B89-8300C02296B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B4AFF1-6E04-45DA-B81D-D8AE718BF3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B4AFF1-6E04-45DA-B81D-D8AE718BF3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B4AFF1-6E04-45DA-B81D-D8AE718BF3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B4AFF1-6E04-45DA-B81D-D8AE718BF3F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
