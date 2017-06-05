@@ -34,7 +34,9 @@
       <HintPath>C:\Users\ElmoZhong\Desktop\Dos.ORM.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="Base\Param.cs" />
+    <Compile Include="Base\ParamExtentions.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="BookStock.cs" />
     <Compile Include="Customer.cs" />

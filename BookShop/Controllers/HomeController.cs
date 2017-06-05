@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Elmo.Business;
 
 namespace BookShop.Controllers
 {
@@ -14,9 +15,14 @@ namespace BookShop.Controllers
             return View();
         }
 
-        public JsonResult GetCustomers()
+        public JsonResult GetBooks()
         {
-            return null;
+            BookLogic bLogic = new BookLogic();
+
+            var result = bLogic.GetBook(null);
+            
+
+            return Json(result);
         }
     }
 }

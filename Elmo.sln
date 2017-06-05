@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmo.Model", "Elmo\Elmo.Model.csproj", "{513438E1-2555-4666-9B89-8300C02296B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop", "BookShop\BookShop.csproj", "{5C06CE2F-AA07-43B2-85D4-A1A1C39114E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50AB3F4F-481A-43BA-905E-4E62BD5571DE} = {50AB3F4F-481A-43BA-905E-4E62BD5571DE}
+		{513438E1-2555-4666-9B89-8300C02296B0} = {513438E1-2555-4666-9B89-8300C02296B0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmo.Business", "Elmo.Business\Elmo.Business.csproj", "{50AB3F4F-481A-43BA-905E-4E62BD5571DE}"
 EndProject

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dos.ORM;
+using Dos.Common;
 
 namespace Elmo.Business.Base
 {
@@ -15,7 +16,7 @@ namespace Elmo.Business.Base
         {
             Context.RegisterSqlLogger(delegate (string sql) 
             {
-
+                LogHelper.Debug(sql, "SQL日志");
             } );
         }
     }

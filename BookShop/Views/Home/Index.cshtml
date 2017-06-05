@@ -10,9 +10,53 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<body>
-    <div> 
+<body ms-controller="avBody">
+    <input type="button" ms-click="GetBoos(el)" />
+    <div id="app">
         Hello World
+
+
+        <table >
+            <tr v-for="book in books">
+                <td>{{book.BookId}}</td>
+            </tr>
+        </table>
+
+        <button v-on:click="showData()">显示数据</button>
     </div>
+
+    <script src="~/Scripts/jquery-1.11.1.min.js"></script>
+    <script src="~/Scripts/vue.js"></script>
+    <div>
+        <script type="text/javascript">
+
+        $(function () {
+            new Vue({
+                el: '#app',
+                data: {
+                    books: ''
+                },
+                methods: {
+                    showData: function () {
+                        var _self = this;
+                        $.ajax({
+                            type: 'POST',
+                            url: './GetBooks',
+                            success: function (data) {
+                                _self.books = data.Data;
+                            },
+                            error: function (xhr) {
+                                alert(xhr.responseText);
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+
+        </script>
+    </div>
+
 </body>
 </html>

@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dos.Common">
+      <HintPath>C:\Users\ElmoZhong\Source\Repos\Dos.Common\bin\Release\Dos.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Dos.ORM">
       <HintPath>C:\Users\ElmoZhong\Desktop\Dos.ORM.dll</HintPath>
     </Reference>
@@ -44,8 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Db.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="BookLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elmo\Elmo.Model.csproj">
+      <Project>{513438E1-2555-4666-9B89-8300C02296B0}</Project>
+      <Name>Elmo.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
